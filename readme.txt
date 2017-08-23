@@ -1,14 +1,3 @@
-################################################################################################
-
-Documentation for Black and White Template by Bootstrapious - http://bootstrapious.com, rel. 2015/12/07
-
-################################################################################################
-
-Hi,
-
-thank you for downloading. Have fun and tell your friends about us ;)
-
-Ondrej from Bootstrapious
 
 
 CSS
