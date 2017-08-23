@@ -279,7 +279,7 @@
             <h2 class="heading">Contact</h2>
             <div class="row">
               <div class="col-md-6">
-                <form id="contact-form" method="post" action="#" class="contact-form">
+                <form id="contact-form" method="post" action="send_form_email.php" class="contact-form">
                   <div class="controls">
                     <div class="row">
                       <div class="col-sm-6">
@@ -300,11 +300,15 @@
                       <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
                     </div>
                     <div class="form-group">
+                      <label for="surname">Phone *</label>
+                      <input type="phone" name="phone" placeholder="Enter your  Phone Number" required="required" class="form-control">
+                    </div>
+                    <div class="form-group">
                       <label for="surname">Your Message for us *</label>
                       <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
                     </div>
                     <div class="text-center">
-                      <input type="submit" name="name" value="Send message" class="btn btn-primary btn-block">
+                      <input type="submit" name="name" value="Send message" class="btn btn-primary btn-block" >
                     </div>
                   </div>
                 </form>
@@ -313,20 +317,81 @@
                 <div align="center">
                   <img src="img/phone_contact3.jpg" style="width: 80% ;height: 80%; border-radius: 50%;">
                 </div>
-                    <!-- <div class="container">
+  <!--                   <div class="container">
                       <div class="row">
                         <div class="col-md-6">
                             <i class="fa fa-map-marker">A & S Asset Managment,777 Hartley Dr.,Lansdale, PA - 19446 </i>
                             <i class="fa fa-phone"> Farrukh: 925.833.9999</i>
                             <i class="fa fa-phone"> Majid: 925.946.9999</i>
                             <i class="fa fa-fax">  Fax: 877.665.8765</i>
-                      <p class="social"><a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a><a href="#" title="" class="instagram"><i class="fa fa-instagram"></i></a><a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p> -->
+                            <p class="social"><a href="#" title="" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" title="" class="twitter"><i class="fa fa-twitter"></i></a><a href="#" title="" class="gplus"><i class="fa fa-google-plus"></i></a><a href="#" title="" class="instagram"><i class="fa fa-instagram"></i></a><a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p>  -->
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> 
+
+    <!-- Trial Email Form starts using PHP  -->
+    <!-- <section>
+      
+      <form name="contactform" method="post" action="send_form_email.php">
+        <table width="450px">
+        <tr>
+         <td valign="top">
+          <label for="first_name">First Name *</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="first_name" maxlength="50" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top"">
+          <label for="last_name">Last Name *</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="last_name" maxlength="50" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="email">Email Address *</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="email" maxlength="80" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="telephone">Telephone Number</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="telephone" maxlength="30" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="comments">Comments *</label>
+         </td>
+         <td valign="top">
+          <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2" style="text-align:center">
+          <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+         </td>
+        </tr>
+        </table>
+        </form>
+         
+
+    </section>  -->
+    <!-- Trial Email Form Ends -->
+    <!-- Contact Section Ends -->
+
+
+    <!-- Map Div -->
     <div id="map"></div>
     
     <footer style="background-color: #111;" class="section-inverse">
