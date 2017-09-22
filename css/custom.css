@@ -1,5 +1,6 @@
 /* your styles go here */
 .intro_custom {
+  font-family: "Palatino", "Palatino Linotype", "Palatino LT STD", "Book Antiqua", "Georgia, serif";
 	font-size: xx-large;
 	display: flex;
 	flex-direction: row;
@@ -37,16 +38,20 @@
  	display: flex;
  	flex-direction: column;
  	align-items: center;
- 	justify-content: center;
+ 	justify-content: flex-end;
 /* 	width: 500px;*/
  	height: 350px;
+  border-radius: 1%;
+  background-repeat: no-repeat; 
+   background-size: cover; 
+   background-position: center;
 
  }
 
-.servicestextbox_custom { 
-	background-color:  white;
- }
 
+.services_align_custom {
+  text-align: center;
+}
 
  .footer2 {
  	display: flex;
@@ -64,9 +69,9 @@
 
  .contact-footer-custom {
  	 display: flex;
- 	flex-direction: column;
- 	align-items: flex-start;
- 	justify-content: flex-start;
+ 	flex-direction: row;
+ 	align-items: center;
+ 	justify-content: center;
 
  }
 
@@ -78,8 +83,14 @@
 .p_custom1 {
 	font-family: Arial, Helvetica, sans-serif;
  	font-size: large;
-
 }
+
+.p_custom2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkgrey;
+  font-size: small;
+}
+
  p {
  	font-style: normal;
  	padding-bottom: 2px;
