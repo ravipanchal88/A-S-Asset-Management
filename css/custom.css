@@ -56,8 +56,8 @@
  .footer2 {
  	display: flex;
  	flex-direction: column;
- 	align-items: center;
- 	justify-content: space-between;
+ 	align-items: flex-end;
+ 	justify-content: flex-end;
  	background-color: #111;
 
  }
@@ -90,6 +90,19 @@
   color: darkgrey;
   font-size: small;
 }
+
+.disclosures_link {
+ text-decoration:underline;
+}
+
+
+.disclosures_link:hover{
+ text-decoration:underline;
+ color: indianred;
+
+}
+
+
 
  p {
  	font-style: normal;
