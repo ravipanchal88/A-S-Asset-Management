@@ -59,7 +59,7 @@
     </section>
     <!-- intro end-->
     <!-- navbar-->
-    <header class="header">
+    <div class="header">
       <div class="sticky-wrapper">
         <div role="navigation" class="navbar navbar-default">
           <div class="container">
@@ -83,7 +83,7 @@
           </div>
         </div>
       </div>
-    </header>
+    </div>
     <!-- /.navbar-->
     <!-- about-->
     <section id="about" class="text">
@@ -98,7 +98,7 @@
             <p><!-- <strong>Farrukh Kazmi</strong> & <strong>Majid Kureshi</strong> of  -->A&S Asset Management offers an investment approach that is different from any other that clients have seen before. One of the many benefits of working with A&S Asset Management is our ability to provide clear, easily understood explanations of financial markets, financial ideas, and where you fit within them. The personalized program that we can provide is a road map to working toward a more secure financial future. </p>
             <!-- <h2 class="heading">Our Team</h2> -->
             <p>As your financial professionals, we are expected to help you make decisions about your money based on the highest degree of scrutiny.</p>
-            <p>You can be assured that we use the same approach when choosing the service providers we employ to help meet your financial objectives. This is why our brokered delear has an agreement with National Financial Services LLC, a Fidelity Investements<span style="font-size: 9px;">®</span>company, to provide trade execution, clearing and other related services for your brokerage account.
+            <p>You can be assured that we use the same approach when choosing the service providers we employ to help meet your financial objectives. This is why our broker dealer has an agreement with National Financial Services LLC, a Fidelity Investements<span style="font-size: 9px;">®</span>company, to provide trade execution, clearing and other related services for your brokerage account.
             <!-- ...<a class="btn" href="#">learn more</a> --> </p>
           </div>
           <div class="col-md-6">
@@ -335,7 +335,8 @@
 
 
     <!-- Map Div -->
-    <div id="map"></div>
+    <div id="map">
+    </div>
     <section id="contact" class="text-page"> 
       <div class="container">
         <div class="row" style="background-color: #00b8ff;">
@@ -410,7 +411,7 @@
 
       </div>
     </footer>
-    <!-- Javascript files-->
+     <!-- Javascript files-->
     <!-- jQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
@@ -424,24 +425,58 @@
     <script src="js/jquery.sticky.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <!-- google maps-->
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"></script>
-    <script src="js/gmaps.js"></script>
+<!--     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"></script> -->
+<!--     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8MQifuSJQTl80MdUE60xKli90GS-oGoE&callback=map"
+        async defer></script>
+    <script src="js/gmaps.js"></script> -->
     <!-- main script-->
     <script src="js/front.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> 
+    <script src="code.jquery.com/jquery-1.11.3.min.js"></script> 
     <!-- Toggle Menu jQuery-->
     <script src="js/mail.js"></script>
      <!-- Mail jQuery-->
+<!--      <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 39.9689, lng: -74.9489},
+          zoom:15
+          })
+      }
+      var uluru= {lat: 39.9689, lng: -74.9489};
+      var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+    </script>
+ -->
 
-    <script>
+     <script>
+      function initMap() {
+        var uluru = {lat: 39.9689, lng: -74.9489};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8MQifuSJQTl80MdUE60xKli90GS-oGoE&callback=initMap"
+    async defer></script>
+    <!-- <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
       function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    </script> -->
     <script>
       $('.navicon').on('click', function (e) {
         e.preventDefault();
@@ -463,6 +498,5 @@
       });
     });
     </script>
-
   </body>
 </html>

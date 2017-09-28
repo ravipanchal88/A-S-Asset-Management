@@ -164,7 +164,7 @@ p.social a.instagram {
   background-color: #999;
 }
 p.social a.email {
-  background-color: red;
+  background-color: #ff8000;
 }
 .copyright {
   margin-top: 40px;
@@ -173,7 +173,7 @@ p.social a.email {
   font-style: italic;
 }
 .copyright p.credit {
-  text-align: right;
+  text-align: cyan;
 }
 .copyright p.credit a {
   color: #eeeeee;
