@@ -202,10 +202,12 @@
   height: 30px;
   width: 50px;
   display: block;
-  z-index: 99;
+  z-index: 199;
   -webkit-transition: linear 0.5s all;
   transition: linear 0.5s all;
 }
+
+
 
 .navicon:before, .navicon:after {
   background: #fff;
@@ -219,7 +221,7 @@
   width: 45px;
 }
 
-.navicon:before {
+.navicon:before  {
   box-shadow: #fff 0 14px 0 0;
   position: absolute;
   top: 0;
