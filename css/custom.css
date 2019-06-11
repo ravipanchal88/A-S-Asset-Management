@@ -87,12 +87,14 @@
 
 .p_custom2 {
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: darkgrey;
   font-size: small;
 }
 
 .disclosures_link {
  text-decoration:underline;
+ color: white;
+ font-size: large;
 }
 
 
