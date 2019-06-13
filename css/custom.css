@@ -93,15 +93,14 @@
 
 .disclosures_link {
  text-decoration:underline;
- color: white;
- font-size: large;
+ color: #00ade6;
+ font-size: medium;
 }
 
 
 .disclosures_link:hover{
  text-decoration:underline;
- color: #00ade6;
- font-size: medium;
+ color: white;
 
 }
 
