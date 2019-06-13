@@ -100,7 +100,8 @@
 
 .disclosures_link:hover{
  text-decoration:underline;
- color: white;
+ color: #00ade6;
+ font-size: medium;
 
 }
 
